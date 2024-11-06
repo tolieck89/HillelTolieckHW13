@@ -1,3 +1,21 @@
+@charset "UTF-8";
+@keyframes verticalMirror {
+  0% {
+    transform: scaleX(1); /* Початкове положення */
+  }
+  50% {
+    transform: scaleX(-1); /* Віддзеркалення по вертикалі */
+  }
+  100% {
+    transform: scaleX(1); /* Віддзеркалення по вертикалі */
+  }
+}
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
 svg {
   stroke-width: 5px;
   height: 300px;
@@ -13,6 +31,9 @@ svg {
   stroke: rgb(54, 23, 23);
   fill: rgb(81, 228, 67);
 }
+.rectanglee:hover {
+  animation: verticalMirror 2s;
+}
 
 .circlee {
   stroke: rgb(167, 47, 47);
@@ -20,7 +41,24 @@ svg {
   box-sizing: border-box;
 }
 
+@keyframes color_changing {
+  0% {
+    fill: rgb(122, 117, 43);
+    stroke: rgb(20, 44, 179);
+  }
+  20% {
+    fill: rgb(230, 223, 125);
+    stroke: rgb(100, 118, 219);
+  }
+  100% {
+    fill: rgb(226, 226, 218);
+    stroke: rgb(152, 158, 194);
+  }
+}
 .ellippsse {
   stroke: rgb(20, 44, 179);
   fill: rgb(122, 117, 43);
+}
+.ellippsse:hover {
+  animation: color_changing 0.5s linear 1;
 }/*# sourceMappingURL=styles.css.map */
