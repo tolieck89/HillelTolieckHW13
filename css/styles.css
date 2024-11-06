@@ -1,0 +1,26 @@
+svg {
+  stroke-width: 5px;
+  height: 300px;
+  width: 300px;
+}
+
+.squaree {
+  stroke: rgb(250, 118, 118);
+  fill: rgb(193, 216, 149);
+}
+
+.rectanglee {
+  stroke: rgb(54, 23, 23);
+  fill: rgb(81, 228, 67);
+}
+
+.circlee {
+  stroke: rgb(167, 47, 47);
+  fill: rgb(156, 104, 141);
+  box-sizing: border-box;
+}
+
+.ellippsse {
+  stroke: rgb(20, 44, 179);
+  fill: rgb(122, 117, 43);
+}/*# sourceMappingURL=styles.css.map */
